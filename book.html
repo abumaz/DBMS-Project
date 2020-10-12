@@ -1,0 +1,173 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <nav>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="index.html">My Account</a></li>
+        <li><a href="book.html">Book Tickets</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+  </nav>
+
+  <div class="movie_container">
+    <div class="movies">
+      <img src="img/movie1.png" alt="Movie 1">
+      <h2>Movie Name 1</h2>
+      <p>Genre: </p>
+      <p>Number of Tickets: <span id="m1"></span></p>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="10" value="1" class="slider" id="myRange1">
+      </div>
+      <button type="submit">Book!</button>
+    </div>
+    <div class="movies">
+      <img src="img/movie2.png" alt="Movie 2">
+      <h2>Movie Name 2</h2>
+      <p>Genre: </p>
+      <p>Number of Tickets: <span id="m2"></span></p>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="10" value="1" class="slider" id="myRange2">
+      </div>
+      <button type="submit">Book!</button>
+    </div><div class="movies">
+      <img src="img/movie3.png" alt="Movie 3">
+      <h2>Movie Name 3</h2>
+      <p>Genre: </p>
+      <p>Number of Tickets: <span id="m3"></span></p>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="10" value="1" class="slider" id="myRange3">
+      </div>
+      <button type="submit">Book!</button>
+    </div><div class="movies">
+      <img src="img/movie4.png" alt="Movie 4">
+      <h2>Movie Name 4</h2>
+      <p>Genre: </p>
+      <p>Number of Tickets: <span id="m4"></span></p>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="10" value="1" class="slider" id="myRange4">
+      </div>
+      <button type="submit">Book!</button>
+    </div><div class="movies">
+      <img src="img/movie5.png" alt="Movie 5">
+      <h2>Movie Name 5</h2>
+      <p>Genre: </p>
+      <p>Number of Tickets: <span id="m5"></span></p>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="10" value="1" class="slider" id="myRange5">
+      </div>
+      <button type="submit">Book!</button>
+    </div><div class="movies">
+      <img src="img/movie6.png" alt="Movie 6">
+      <h2>Movie Name 6</h2>
+      <p>Genre: </p>
+      <p>Number of Tickets: <span id="m6"></span></p>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="10" value="1" class="slider" id="myRange6">
+      </div>
+
+      <button type="submit">Book!</button>
+    </div>
+  </div>
+  <script type="text/javascript">
+  var slider1 = document.getElementById("myRange1");
+  var output1 = document.getElementById("m1");
+  output1.innerHTML = slider1.value; // Display the default slider value
+
+  // Update the current slider value (each time you drag the slider handle)
+  slider1.oninput = function() {
+  output1.innerHTML = this.value;
+  }
+
+  var slider2 = document.getElementById("myRange2");
+  var output2 = document.getElementById("m2");
+  output2.innerHTML = slider2.value; // Display the default slider value
+
+  // Update the current slider value (each time you drag the slider handle)
+  slider2.oninput = function() {
+  output2.innerHTML = this.value;
+  }
+
+  var slider3 = document.getElementById("myRange3");
+  var output3 = document.getElementById("m3");
+  output3.innerHTML = slider3.value; // Display the default slider value
+
+  // Update the current slider value (each time you drag the slider handle)
+  slider3.oninput = function() {
+  output3.innerHTML = this.value;
+  }
+
+  var slider4 = document.getElementById("myRange4");
+  var output4 = document.getElementById("m4");
+  output4.innerHTML = slider4.value; // Display the default slider value
+
+  // Update the current slider value (each time you drag the slider handle)
+  slider4.oninput = function() {
+  output4.innerHTML = this.value;
+  }
+
+  var slider5 = document.getElementById("myRange5");
+  var output5 = document.getElementById("m5");
+  output5.innerHTML = slider5.value; // Display the default slider value
+
+  // Update the current slider value (each time you drag the slider handle)
+  slider5.oninput = function() {
+  output5.innerHTML = this.value;
+  }
+
+  var slider6 = document.getElementById("myRange6");
+  var output6 = document.getElementById("m6");
+  output6.innerHTML = slider6.value; // Display the default slider value
+
+  // Update the current slider value (each time you drag the slider handle)
+  slider6.oninput = function() {
+  output6.innerHTML = this.value;
+  }
+  </script>
+  
+  <footer>
+    <div>
+      <p>Made by Team 10</p>
+      <p>Abdul Majed - 19BCE0942</p>
+      <p>Logesh S - 19BCE0839</p>
+      <p>Swarna Sai Nikil Teja - 19BCE0256</p>
+  </div>
+  </footer>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

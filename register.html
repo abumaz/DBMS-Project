@@ -1,0 +1,78 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <nav>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="index.html">My Account</a></li>
+        <li><a href="book.html">Book Tickets</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+  </nav>
+
+  <div class="containers">
+    <form action="action_page.php" method="post">
+     <div class="container">
+
+       <label for="email"><b>Email ID</b></label>
+       <input type="email" placeholder="Enter Email ID" name="email" required>
+
+       <label for="uname"><b>Username</b></label>
+       <input type="text" placeholder="Enter Username" name="uname" required>
+
+       <label for="psw"><b>Password</b></label>
+       <input type="password" placeholder="Enter Password" name="psw" required>
+
+       <label for="repsw"><b>Re-enter Password</b></label>
+       <input type="password" placeholder="Re-Enter Password" name="repsw" required>
+
+       <button type="submit">Login</button>
+     </div>
+    </form>
+  </div>
+  <footer>
+    <div>
+      <p>Made by Team 10</p>
+      <p>Abdul Majed - 19BCE0942</p>
+      <p>Logesh S - 19BCE0839</p>
+      <p>Swarna Sai Nikil Teja - 19BCE0256</p>
+  </div>
+  </footer>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
